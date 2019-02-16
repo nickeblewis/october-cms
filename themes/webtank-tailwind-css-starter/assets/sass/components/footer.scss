@@ -1,0 +1,11 @@
+footer#site-footer  {
+    @apply .text-teal-darkest;
+
+    a {
+       @apply .text-grey-lightest;
+
+        &:hover {
+            @apply .text-white;
+        }
+    }
+}

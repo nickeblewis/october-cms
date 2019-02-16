@@ -1,0 +1,34 @@
+description = "Default Layout"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ 'assets/public/css/app.css'|theme }}" rel="stylesheet" type="text/css" media="screen" />    
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="layout-header">
+        {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+        {% page %}
+    </section>
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+        {% partial 'site/footer' %}
+    </footer>
+
+    <!-- <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script> -->
+    <script src="{{ 'assets/public/js/app.js'|theme }}"></script>
+    {% framework extras %}
+    {% scripts %}
+</body>
+</html>

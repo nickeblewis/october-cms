@@ -1,0 +1,13 @@
+@tailwind preflight;
+
+@tailwind components;
+
+/* Custom Components */
+@import 'components/elements';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/banner';
+
+@tailwind utilities
+
+/* Custom Utilities */
